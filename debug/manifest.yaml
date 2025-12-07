@@ -11,9 +11,9 @@ spec:
     - name: nginx
       image: krishnachaitanyadevops1/debug:v1
       ports: 
-      - containerport: 80 
+      - Containerport: 80 
 
 
 
-      
+
  
