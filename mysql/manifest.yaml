@@ -37,16 +37,16 @@ spec:
       - name: redis
         image: redis:7.0
         imagePullPolicy: Always
-        readinessProbe:
-          tcpSocket:
-            port: 6379
-          initialDelaySeconds: 10
-          periodSeconds: 10
-        livenessProbe:
-          tcpSocket:
-            port: 6379
-          initialDelaySeconds: 20
-          periodSeconds: 5
+        # readinessProbe:
+        #   tcpSocket:
+        #     port: 6379
+        #   initialDelaySeconds: 10
+        #   periodSeconds: 10
+        # livenessProbe:
+        #   tcpSocket:
+        #     port: 6379
+        #   initialDelaySeconds: 20
+        #   periodSeconds: 5
         volumeMounts:
         - name: mysql-config
           mountPath: /etc/mysql/conf.d/my.cnf
@@ -77,7 +77,7 @@ spec:
 
 
 
-      
+
 
 
 
