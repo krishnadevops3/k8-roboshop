@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
       - name: catalogue
-        image: krishnachaitanyadevops1/catalogue:v1
+        image: joindevops/catalogue:v1
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
@@ -70,22 +70,3 @@ spec:
     - protocol: TCP
       port: 8080 # service port
       targetPort: 8080 # container port
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-      
