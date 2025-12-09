@@ -23,16 +23,16 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: krishnachaitanyadevops1/mongodb:v1
-        imagePullPolicy: Always
+        image: mongo:4.2
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 27017
-        readinessProbe:
+      readinessProbe:
           tcpSocket:
             port: 27017
           initialDelaySeconds: 10
           periodSeconds: 10
-        livenessProbe:
+      livenessProbe:
           tcpSocket:
             port: 27017
           initialDelaySeconds: 20
