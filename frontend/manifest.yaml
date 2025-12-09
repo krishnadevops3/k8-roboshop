@@ -96,7 +96,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: krishnachaitanyadevops1/frontend:v1
+        image: joindevops/frontend:v1
         imagePullPolicy: Always
         ports:
         - name: liveness-port
@@ -137,3 +137,9 @@ spec:
     - protocol: TCP
       port: 80 # service port
       targetPort: 8080 # container port
+
+
+
+
+
+      
